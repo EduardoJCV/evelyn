@@ -10,7 +10,7 @@ const About = () => {
     <>
         <section id="about">
             <div className="container about__container">
-                <h2 className="about__title">About<br/>Diana Ayi</h2>
+                <h2 className="about__title">About<br/>Evelyn Villalba</h2>
                 <a href="mailto:support@egattor.com" className="contact__btn about__btn">
                     <i className="uil uil-arrow-up-right"></i>
                     <p>CONTACT - SEND ME AN EMAIL</p>
