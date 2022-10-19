@@ -126,7 +126,10 @@ nav {
 }
 
 .nav__logo {
-    width: 7.5rem;
+    color: white;
+    font-size: 30px;
+    width: 13.5rem;
+    font-family: 'Fasthand', cursive !important;
 }
 
 .nav__links {

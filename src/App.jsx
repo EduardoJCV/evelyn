@@ -79,7 +79,7 @@ const App = () => {
     <>
       <nav>
         <div className="container nav__container">
-            <a href="index.html" className="nav__logo"><img src={require("./assets/images/logo.png")} alt="Nav Logo" /></a>
+            <a href="index.html" className="nav__logo">Evelyn Villalba</a>
             <ul className="nav__links">
                 <li><a href="#">Home</a></li>
                 <li><a href="#about">About</a></li>
