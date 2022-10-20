@@ -175,7 +175,7 @@ header {
     display: grid;
     grid-template-columns: 43% 53%;
     gap: 4%;
-    margin-top: 10rem;
+    margin-top: 140px !important;
     position: relative;
 }
 
@@ -430,7 +430,6 @@ header {
 
 .swiper-wrapper {
     margin-top: 5rem;
-    height: 37rem;
     padding-bottom: 5rem;
 }
 

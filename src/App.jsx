@@ -2,11 +2,12 @@ import React, { useEffect } from 'react'
 
 import './style.css'
 
-import Swiper from 'swiper';
+import Swiper, { Navigation, Pagination } from 'swiper';
 import Home from './components/home/Home';
 import About from './components/about/About';
 import Gallery from './components/gallery/Gallery';
 import Exhibitions from './components/exhibitions/Exhibitions';
+import Form from './components/form/form';
 
 const App = () => {
 
@@ -27,11 +28,16 @@ const App = () => {
 
     // SWIPER JS (gallery section)
     var swiper = new Swiper(".mySwiper", {
+      modules: [ Navigation, Pagination ],
       slidesPerView: 1,
       spaceBetween: 20,
+      autoplay: {
+        delay: 5000,
+      },
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
+        type: 'bullets',
       },
       breakpoints: {
           599: {
@@ -44,6 +50,8 @@ const App = () => {
           }
       }
     });
+
+    console.log(swiper)
 
     const nav = document.querySelector('.nav__links');
     const openNavBtn = document.querySelector('#nav__toggle-open');
@@ -106,9 +114,10 @@ const App = () => {
       
       <footer>
           <div className="container footer__container">
+            <Form />
               <div className="footer__head">
                   <h2 className="footer__title">evelynvillalba@gmail.com</h2>
-                  <a href="mailto:support@egattor.com" className="footer__btn"><i className="uil uil-arrow-up-right"></i></a>
+                  <a href="mailto:evelynvillalba@gmail.com" className="footer__btn"><i className="uil uil-arrow-up-right"></i></a>
               </div>
               <ul className="footer__links">
                   <li><a href="#">Home</a></li>

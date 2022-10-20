@@ -1,0 +1,20 @@
+.form-contact form {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.transform-translate:hover {
+	transform: translateY( -1px );
+}
+
+.transition {
+	transition: all .15s ease;
+}
+
+/* Changes highlight color */
+::selection {
+  background: #805AD5;
+	color: #FFF;
+}
